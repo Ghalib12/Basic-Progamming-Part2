@@ -6,21 +6,25 @@ import (
 
 func PrimeNumber(number int) bool {
 	// your code here
-	for bil := 1; bil < 10; bil++ {
-		i := 0
-		for bag := 1; bag < 10; bag++ {
-			if bil%bag == 0 {
-				i++
-			}
-		}
-		if (i == 2) && (bil != 1) {
-			fmt.Println(bil)
+	var prima int8
+	var bil bool
+	for i := 1; i <= number; i++ {
+		if number%i == 0 {
+			prima++
 		}
 	}
+	if prima == 2 {
+		bil = true
+	} else {
+		bil = false
+	}
+	return bil
 }
 
 func main() {
-	fmt.Println(PrimeNumber(3))
-	fmt.Println(PrimeNumber(7))
-	fmt.Println(PrimeNumber(10))
+	fmt.Println(PrimeNumber(11))
+	fmt.Println(PrimeNumber(13))
+	fmt.Println(PrimeNumber(17))
+	fmt.Println(PrimeNumber(20))
+	fmt.Println(PrimeNumber(35))
 }

@@ -5,10 +5,10 @@ import (
 )
 
 func FullPrima(n int) bool {
-	// write your code
-	var angka := 23
+	// write your codej
+	angka := 23
 	angkastr := fmt.Sprintf("%d", angka)
-	for _, v := range ankastr {
+	for _, v := range angkastr {
 		fmt.Println(string(v))
 	}
 	var arr = [5]int{1, 2, 3, 4, 5}
@@ -18,6 +18,7 @@ func FullPrima(n int) bool {
 
 	var a = 10
 	fmt.Println(&a)
+	return
 }
 
 func main() {
